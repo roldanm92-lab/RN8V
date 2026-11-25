@@ -71,8 +71,11 @@ fetch('finds.json', {cache: 'no-store'}).then(r => r.json()).then(days => {
   const total = days.reduce((n, d) => n + d.posts.length, 0);
   document.getElementById('sub').textContent = `${total} posts across ${days.length} search${days.length === 1 ? '' : 'es'}, newest first.`;
   document.getElementById('days').innerHTML = days.map(d => {
-    const good = d.posts.filter(p => p.group !== 'check');
-    const check = d.posts.filter(p => p.group === 'check');
+    // newest post first; "Nov 2"-style dates are read relative to the search date
+    const when = p => { const s = new Date(d.date + 'T12:00:00'); const t = new Date(`${p.posted} ${s.getFullYear()} 12:00`);
+      if (isNaN(t)) return 0; if (t > s) t.setFullYear(t.getFullYear() - 1); return t.getTime(); };
+    const posts = [...d.posts].sort((a, b) => when(b) - when(a))
+      .map(p => p.group === 'check' ? {...p, flags: ['Check first', ...(p.flags||[])]} : p);
     const extra = (d.accounts?.length || d.hashtags?.length) ? `
       <details><summary>Sources used</summary>
         ${d.accounts?.length ? `<h3>Accounts</h3>${chips(d.accounts)}` : ''}
@@ -80,8 +83,7 @@ fetch('finds.json', {cache: 'no-store'}).then(r => r.json()).then(days => {
       </details>` : '';
     return `<section class="day">
       <div class="dayhead"><h2>${fmtDay(d.date)}</h2><span class="count">${d.posts.length} post${d.posts.length === 1 ? '' : 's'}</span></div>
-      ${good.length ? `<h3>Good to reshare</h3><div class="list">${good.map(card).join('')}</div>` : ''}
-      ${check.length ? `<h3>Check first</h3><div class="list">${check.map(card).join('')}</div>` : ''}
+      ${posts.length ? `<div class="list" style="margin-top:14px">${posts.map(card).join('')}</div>` : ''}
       ${d.posts.length ? '' : '<p class="empty">No new posts found.</p>'}
       ${extra}
     </section>`;
