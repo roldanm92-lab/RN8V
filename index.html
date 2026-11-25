@@ -15,11 +15,16 @@ body{background:var(--bg);color:var(--ink);font:17px/1.5 "Atkinson Hyperlegible"
 .wrap{max-width:760px;margin:0 auto;padding:0 16px}
 header{background:var(--swamp);color:#f4ecdc;padding:28px 0 32px}
 .kicker{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:var(--sun)}
-h1,h2{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0}
 h1{font-size:clamp(32px,7vw,48px);margin:8px 0 8px;letter-spacing:-.02em}
 header p{margin:0;color:#cfdacb}
-main{padding:28px 0 60px}
-h2{font-size:24px;margin:28px 0 12px}
+main{padding:12px 0 60px}
+.day{padding:24px 0;border-bottom:2px solid var(--line)}
+.day:last-child{border-bottom:0}
+.dayhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dayhead h2{font-size:28px;letter-spacing:-.01em}
+.count{color:var(--muted);font-size:15px}
+h3{font-size:19px;margin:20px 0 10px}
 .list{display:grid;gap:12px}
 .post{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;color:inherit}
 .post:hover{border-color:var(--sun)}
@@ -30,9 +35,11 @@ h2{font-size:24px;margin:28px 0 12px}
 .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--ok-bg);color:var(--ok)}
 .tag.warn{background:var(--warn-bg);color:var(--warn)}
-.open{font-size:14px;color:var(--sun);font-weight:700}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:15px}
+details{margin-top:16px}
+summary{cursor:pointer;color:var(--muted);font-weight:700;font-size:15px}
+.empty{color:var(--muted);padding:24px 0}
 footer{color:var(--muted);font-size:14px;padding:0 0 40px}
 </style>
 </head>
@@ -40,68 +47,46 @@ footer{color:var(--muted);font-size:14px;padding:0 0 40px}
 <header>
   <div class="wrap">
     <div class="kicker">Rare Native · Instagram search</div>
-    <h1>Story reshare shortlist</h1>
-    <p>Florida wildlife posts found on Instagram · search run Nov 24, 2026</p>
+    <h1>Story reshare finds</h1>
+    <p id="sub">Florida wildlife posts found on Instagram, newest search first.</p>
   </div>
 </header>
 
-<main class="wrap">
-  <h2>Good to reshare</h2>
-  <div class="list">
-    <a class="post" href="https://www.instagram.com/p/DfQOZOalIXq/" target="_blank" rel="noopener">
-      <div class="top"><span class="acct">@floridastateparksfoundation</span><span class="date">Nov 2</span></div>
-      <p>Manatee Awareness Month: state parks where you can see manatees.</p>
-      <div class="tags"><span class="tag">Swamp Report</span><span class="tag">Quiz day</span><span class="tag warn">Time-sensitive: November</span></div>
-    </a>
-    <a class="post" href="https://www.instagram.com/p/DfdNFtoHQZ9/" target="_blank" rel="noopener">
-      <div class="top"><span class="acct">@friendsoftheflpantherrefuge</span><span class="date">Nov 7</span></div>
-      <p>Guided swamp walk on Dec 19 in a closed area of the Florida Panther refuge, limited to 12 people. More dates January–April.</p>
-      <div class="tags"><span class="tag">Weekend plans</span></div>
-    </a>
-    <a class="post" href="https://www.instagram.com/p/DfeK6HMglIg/" target="_blank" rel="noopener">
-      <div class="top"><span class="acct">@esterswildworld</span><span class="date">Nov 7</span></div>
-      <p>Black bear photographed in Ocala National Forest.</p>
-      <div class="tags"><span class="tag">Swamp Report</span></div>
-    </a>
-    <a class="post" href="https://www.instagram.com/p/DfpcdbtlHzM/" target="_blank" rel="noopener">
-      <div class="top"><span class="acct">@alovelettertonature</span><span class="date">Nov 12</span></div>
-      <p>A photographer's first wild Florida panther sighting, after 79 attempts over 19 months.</p>
-      <div class="tags"><span class="tag">Swamp Report</span><span class="tag warn">Review caption tone</span></div>
-    </a>
-  </div>
-
-  <h2>Check first</h2>
-  <div class="list">
-    <a class="post" href="https://www.instagram.com/p/Df790atGwQl/" target="_blank" rel="noopener">
-      <div class="top"><span class="acct">@floridafoundco</span><span class="date">Nov 19</span></div>
-      <p>Reported sighting of a 165 lb panther near Babcock Ranch.</p>
-      <div class="tags"><span class="tag warn">Verify with FWC</span></div>
-    </a>
-    <a class="post" href="https://www.instagram.com/p/DgDWbInlXeg/" target="_blank" rel="noopener">
-      <div class="top"><span class="acct">@erinmeyers</span><span class="date">Nov 22</span></div>
-      <p>Post about proposed data centers on Florida state park land.</p>
-      <div class="tags"><span class="tag warn">Advocacy: team decision</span></div>
-    </a>
-  </div>
-
-  <h2>Accounts to check weekly</h2>
-  <div class="chips">
-    <span class="chip">Florida Wildlife Federation</span>
-    <span class="chip">Florida Wildlife Corridor</span>
-    <span class="chip">Friends of the Everglades</span>
-    <span class="chip">Florida State Parks Foundation</span>
-    <span class="chip">Path of the Panther</span>
-    <span class="chip">Clyde Butcher's gallery</span>
-  </div>
-
-  <h2>Best hashtags</h2>
-  <div class="chips">
-    <span class="chip">#floridapanther</span>
-    <span class="chip">#keepfloridawild</span>
-    <span class="chip">#floridawildlife</span>
-    <span class="chip">#manatee</span>
-  </div>
-</main>
+<main class="wrap" id="days"><p class="empty">Loading…</p></main>
 <footer class="wrap">Tap a card to open the post on Instagram.</footer>
+
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtDay = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric', year:'numeric'});
+const card = p => `
+  <a class="post" href="${esc(p.url)}" target="_blank" rel="noopener">
+    <div class="top"><span class="acct">@${esc(p.account)}</span><span class="date">${esc(p.posted)}</span></div>
+    <p>${esc(p.summary)}</p>
+    <div class="tags">${(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}${(p.flags||[]).map(t=>`<span class="tag warn">${esc(t)}</span>`).join('')}</div>
+  </a>`;
+const chips = a => `<div class="chips">${a.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</div>`;
+
+fetch('finds.json', {cache: 'no-store'}).then(r => r.json()).then(days => {
+  days.sort((a, b) => b.date.localeCompare(a.date));
+  const total = days.reduce((n, d) => n + d.posts.length, 0);
+  document.getElementById('sub').textContent = `${total} posts across ${days.length} search${days.length === 1 ? '' : 'es'}, newest first.`;
+  document.getElementById('days').innerHTML = days.map(d => {
+    const good = d.posts.filter(p => p.group !== 'check');
+    const check = d.posts.filter(p => p.group === 'check');
+    const extra = (d.accounts?.length || d.hashtags?.length) ? `
+      <details><summary>Sources used</summary>
+        ${d.accounts?.length ? `<h3>Accounts</h3>${chips(d.accounts)}` : ''}
+        ${d.hashtags?.length ? `<h3>Hashtags</h3>${chips(d.hashtags)}` : ''}
+      </details>` : '';
+    return `<section class="day">
+      <div class="dayhead"><h2>${fmtDay(d.date)}</h2><span class="count">${d.posts.length} post${d.posts.length === 1 ? '' : 's'}</span></div>
+      ${good.length ? `<h3>Good to reshare</h3><div class="list">${good.map(card).join('')}</div>` : ''}
+      ${check.length ? `<h3>Check first</h3><div class="list">${check.map(card).join('')}</div>` : ''}
+      ${d.posts.length ? '' : '<p class="empty">No new posts found.</p>'}
+      ${extra}
+    </section>`;
+  }).join('') || '<p class="empty">No searches yet.</p>';
+}).catch(() => { document.getElementById('days').innerHTML = '<p class="empty">Couldn’t load the list.</p>'; });
+</script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+[
+  {
+    "date": "2026-11-24",
+    "posts": [
+      {
+        "account": "floridastateparksfoundation",
+        "posted": "Nov 2",
+        "summary": "Manatee Awareness Month: state parks where you can see manatees.",
+        "url": "https://www.instagram.com/p/DfQOZOalIXq/",
+        "group": "reshare",
+        "tags": ["Swamp Report", "Quiz day"],
+        "flags": ["Time-sensitive: November"]
+      },
+      {
+        "account": "friendsoftheflpantherrefuge",
+        "posted": "Nov 7",
+        "summary": "Guided swamp walk on Dec 19 in a closed area of the Florida Panther refuge, limited to 12 people. More dates January–April.",
+        "url": "https://www.instagram.com/p/DfdNFtoHQZ9/",
+        "group": "reshare",
+        "tags": ["Weekend plans"],
+        "flags": []
+      },
+      {
+        "account": "esterswildworld",
+        "posted": "Nov 7",
+        "summary": "Black bear photographed in Ocala National Forest.",
+        "url": "https://www.instagram.com/p/DfeK6HMglIg/",
+        "group": "reshare",
+        "tags": ["Swamp Report"],
+        "flags": []
+      },
+      {
+        "account": "alovelettertonature",
+        "posted": "Nov 12",
+        "summary": "A photographer's first wild Florida panther sighting, after 79 attempts over 19 months.",
+        "url": "https://www.instagram.com/p/DfpcdbtlHzM/",
+        "group": "reshare",
+        "tags": ["Swamp Report"],
+        "flags": ["Review caption tone"]
+      },
+      {
+        "account": "floridafoundco",
+        "posted": "Nov 19",
+        "summary": "Reported sighting of a 165 lb panther near Babcock Ranch.",
+        "url": "https://www.instagram.com/p/Df790atGwQl/",
+        "group": "check",
+        "tags": [],
+        "flags": ["Verify with FWC"]
+      },
+      {
+        "account": "erinmeyers",
+        "posted": "Nov 22",
+        "summary": "Post about proposed data centers on Florida state park land.",
+        "url": "https://www.instagram.com/p/DgDWbInlXeg/",
+        "group": "check",
+        "tags": [],
+        "flags": ["Advocacy: team decision"]
+      }
+    ],
+    "accounts": ["Florida Wildlife Federation", "Florida Wildlife Corridor", "Friends of the Everglades", "Florida State Parks Foundation", "Path of the Panther", "Clyde Butcher's gallery"],
+    "hashtags": ["#floridapanther", "#keepfloridawild", "#floridawildlife", "#manatee"]
+  }
+]
