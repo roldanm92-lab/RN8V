@@ -8,8 +8,13 @@
         "summary": "Manatee Awareness Month: state parks where you can see manatees.",
         "url": "https://www.instagram.com/p/DfQOZOalIXq/",
         "group": "reshare",
-        "tags": ["Swamp Report", "Quiz day"],
-        "flags": ["Time-sensitive: November"]
+        "tags": [
+          "Swamp Report",
+          "Quiz day"
+        ],
+        "flags": [
+          "Time-sensitive: November"
+        ]
       },
       {
         "account": "friendsoftheflpantherrefuge",
@@ -17,7 +22,9 @@
         "summary": "Guided swamp walk on Dec 19 in a closed area of the Florida Panther refuge, limited to 12 people. More dates January–April.",
         "url": "https://www.instagram.com/p/DfdNFtoHQZ9/",
         "group": "reshare",
-        "tags": ["Weekend plans"],
+        "tags": [
+          "Weekend plans"
+        ],
         "flags": []
       },
       {
@@ -26,7 +33,9 @@
         "summary": "Black bear photographed in Ocala National Forest.",
         "url": "https://www.instagram.com/p/DfeK6HMglIg/",
         "group": "reshare",
-        "tags": ["Swamp Report"],
+        "tags": [
+          "Swamp Report"
+        ],
         "flags": []
       },
       {
@@ -35,8 +44,12 @@
         "summary": "A photographer's first wild Florida panther sighting, after 79 attempts over 19 months.",
         "url": "https://www.instagram.com/p/DfpcdbtlHzM/",
         "group": "reshare",
-        "tags": ["Swamp Report"],
-        "flags": ["Review caption tone"]
+        "tags": [
+          "Swamp Report"
+        ],
+        "flags": [
+          "Review caption tone"
+        ]
       },
       {
         "account": "floridafoundco",
@@ -45,7 +58,9 @@
         "url": "https://www.instagram.com/p/Df790atGwQl/",
         "group": "check",
         "tags": [],
-        "flags": ["Verify with FWC"]
+        "flags": [
+          "Verify with FWC"
+        ]
       },
       {
         "account": "erinmeyers",
@@ -54,10 +69,173 @@
         "url": "https://www.instagram.com/p/DgDWbInlXeg/",
         "group": "check",
         "tags": [],
-        "flags": ["Advocacy: team decision"]
+        "flags": [
+          "Advocacy: team decision"
+        ]
       }
     ],
-    "accounts": ["Florida Wildlife Federation", "Florida Wildlife Corridor", "Friends of the Everglades", "Florida State Parks Foundation", "Path of the Panther", "Clyde Butcher's gallery"],
-    "hashtags": ["#floridapanther", "#keepfloridawild", "#floridawildlife", "#manatee"]
+    "accounts": [
+      "Florida Wildlife Federation",
+      "Florida Wildlife Corridor",
+      "Friends of the Everglades",
+      "Florida State Parks Foundation",
+      "Path of the Panther",
+      "Clyde Butcher's gallery"
+    ],
+    "hashtags": [
+      "#floridapanther",
+      "#keepfloridawild",
+      "#floridawildlife",
+      "#manatee"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "posts": [
+      {
+        "account": "friendsoftheeverglades",
+        "posted": "Nov 26",
+        "summary": "Meet the Osceola wild turkey, a turkey found nowhere in the world but Florida.",
+        "url": "https://www.instagram.com/reel/DgNc93KpsB8/",
+        "group": "reshare",
+        "tags": [
+          "Quiz day"
+        ],
+        "flags": [
+          "Time-sensitive: Thanksgiving"
+        ]
+      },
+      {
+        "account": "floridastateparksfoundation",
+        "posted": "Nov 26",
+        "summary": "Thanksgiving post asking followers which state park they're visiting this holiday.",
+        "url": "https://www.instagram.com/p/DgNRdJjkVl3/",
+        "group": "reshare",
+        "tags": [
+          "Weekend plans"
+        ],
+        "flags": [
+          "Time-sensitive: Thanksgiving"
+        ]
+      },
+      {
+        "account": "friendsoftheeverglades",
+        "posted": "Nov 25",
+        "summary": "Short wildlife reel captioned \"They were here first.\"",
+        "url": "https://www.instagram.com/reel/DgKyv4VMDnb/",
+        "group": "reshare",
+        "tags": [
+          "Swamp Report"
+        ],
+        "flags": []
+      },
+      {
+        "account": "floridawildlifecorridor",
+        "posted": "Nov 25",
+        "summary": "Giving Tuesday campaign raising $100,000 for the Florida Wildlife Corridor Foundation.",
+        "url": "https://www.instagram.com/p/DgLVrJujU53/",
+        "group": "check",
+        "tags": [],
+        "flags": [
+          "Fundraising ask: team decision"
+        ]
+      },
+      {
+        "account": "floridawildlifecorridor",
+        "posted": "Nov 24",
+        "summary": "Film night at Tampa Theatre: Florida premieres of \"Out of Office\" and \"American Amazon\" plus a look at \"A Land Remembered.\"",
+        "url": "https://www.instagram.com/p/DgI4chfoInP/",
+        "group": "reshare",
+        "tags": [
+          "Weekend plans"
+        ],
+        "flags": [
+          "Confirm event date"
+        ]
+      },
+      {
+        "account": "floridastateparksfoundation",
+        "posted": "Nov 23",
+        "summary": "Florida State Parks photo contest, \"Capture the Real Florida,\" open to park visitors through Dec 31.",
+        "url": "https://www.instagram.com/p/DgFp88xEZHn/",
+        "group": "reshare",
+        "tags": [
+          "Weekend plans"
+        ],
+        "flags": []
+      },
+      {
+        "account": "friendsoftheeverglades",
+        "posted": "Nov 19",
+        "summary": "GTA 5 vs. GTA 6 Florida meme: unlike video games, the Everglades can't respawn.",
+        "url": "https://www.instagram.com/p/Df8GtrHl88e/",
+        "group": "reshare",
+        "tags": [
+          "Swamp Report"
+        ],
+        "flags": []
+      },
+      {
+        "account": "friendsoftheeverglades",
+        "posted": "Nov 19",
+        "summary": "Post on the closure of the \"Alligator Alcatraz\" facility in Big Cypress and the group's lawsuit.",
+        "url": "https://www.instagram.com/p/Df6-hylF-YD/",
+        "group": "check",
+        "tags": [],
+        "flags": [
+          "Advocacy: team decision"
+        ]
+      },
+      {
+        "account": "floridastateparksfoundation",
+        "posted": "Nov 19",
+        "summary": "Manatee Awareness Month: Myakka River State Park gets a new airboat for manatee stewardship.",
+        "url": "https://www.instagram.com/p/Df7fCfwlHHK/",
+        "group": "reshare",
+        "tags": [
+          "Quiz day"
+        ],
+        "flags": [
+          "Time-sensitive: November"
+        ]
+      },
+      {
+        "account": "floridawildlifecorridor",
+        "posted": "Nov 17",
+        "summary": "Florida Governor and Cabinet approve permanent conservation of 55,438 acres in the Wildlife Corridor.",
+        "url": "https://www.instagram.com/p/Df236ZVl_fu/",
+        "group": "reshare",
+        "tags": [
+          "Quiz day"
+        ],
+        "flags": []
+      },
+      {
+        "account": "wildspacestpete",
+        "posted": "Nov 17",
+        "summary": "Shop Small Saturday at Wild Space Gallery in St. Pete, Nov 28, 1–6 pm: Florida-inspired local makers.",
+        "url": "https://www.instagram.com/p/Df2dmFsFz7P/",
+        "group": "reshare",
+        "tags": [
+          "Weekend plans"
+        ],
+        "flags": [
+          "Time-sensitive: Nov 28"
+        ]
+      }
+    ],
+    "accounts": [
+      "Florida Wildlife Corridor",
+      "Friends of the Everglades",
+      "Florida State Parks Foundation",
+      "Path of the Panther"
+    ],
+    "hashtags": [
+      "#floridapanther",
+      "#keepfloridawild",
+      "#floridawildlife",
+      "#manatee",
+      "#everglades"
+    ]
   }
 ]
